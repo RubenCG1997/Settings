@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Relax">
+        <ListPreference
+            android:entries="@array/descanso"
+            android:entryValues="@array/descanso"
+            android:key="descanso"
+            android:title="Descansar"
+            app:defaultValue="1 hora"
+            app:summary="Frecuencia de recordatorio" />
+        <EditTextPreference
+            android:defaultValue="!A descansar!"
+            android:key="alarma"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre de alarma"
+            app:dialogTitle="Nombre recordatorio alarma"
+            app:summary="Nombre recordatorio de la alarma" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Pantalla">
+
+        <ListPreference
+            android:entries="@array/pantalla"
+            app:entryValues="@array/pantalla"
+            android:defaultValue="Nunca"
+            android:key="pantalla"
+            android:title="Apagar pantalla"
+            app:summary="Minutos para apagar la pantalla" />
+        <SeekBarPreference
+            android:max="20"
+            app:defaultValue="5"
+            app:key="fuente"
+            app:min="1"
+            app:summary="Establezca el tamaño de fuente"
+            app:title="Tamaño de fuente" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="oscuro"
+            app:title="Establecer modo oscuro" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Conexiones">
+
+        <MultiSelectListPreference
+            android:entries="@array/datos_Moviles"
+            android:entryValues="@array/datos_Moviles"
+            android:key="datos_Moviles"
+            android:title="Limitar el uso de datos móviles"
+            app:defaultValue="@array/datos_Moviles_Default"
+            app:summary="Envío de video en HD sobre Wi-Fi" />
+        <MultiSelectListPreference
+            android:entries="@array/descargas_Video"
+            android:entryValues="@array/descargas_Video"
+            android:key="descarga"
+            android:title="Descargar video"
+            app:defaultValue="@array/descargas_Video_Default"
+            app:summary="Especifica la calidad de las descargas" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="restrictivo"
+            android:title="Modo restrictivo"
+            app:summary="El modo restrictivo puede ayudarte a ocultar videos con contenidos potencialmente para adultos. El filtro no es 100% preciso,pero puede ayudar a evitar la mayoría " />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="estadisticas"
+            android:title="Habilitar estadísticas de uso" />
+    </PreferenceCategory>
+</PreferenceScreen>

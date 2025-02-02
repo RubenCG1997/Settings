@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="lbl_Menu">My app</string>
+    <string name="title_AD">Restaurar configuracion</string>
+    <string name="mesage_AD">¿Desea restaurar la configuración por defecto de todas sus preferencias</string>
+    <string name="positive_AD">Aceptar</string>
+    <string name="negative_AD">Cancelar</string>
+    <string name="preference_Category">Relax:</string>
+    <string name="List_Category">Descansar</string>
+    <string name="Summary_List_Category">Frecuencia de recordatorio</string>
+    <string name="EditText_Category">Nombre de alarma</string>
+    <string name="Summary_EditText_Category">Nombre recordatorio de la alarma</string>
+    <array name="descanso">
+        <item>1 hora</item>
+        <item>2 horas</item>
+        <item>5 horas</item>
+        <item>6 horas</item>
+    </array>
+    <array name="pantalla">
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>30 min</item>
+        <item>Nunca</item>
+    </array>
+    <array name="pantalla_Default">
+        <item>Nunca</item>
+    </array>
+    <array name="datos_Moviles">
+        <item>Sólo con Wi-Fi</item>
+        <item>Sólo en red de datos</item>
+        <item>En cualquier red</item>
+    </array>
+    <array name="datos_Moviles_Default">
+        <item>En cualquier red</item>
+    </array>
+    <array name="descargas_Video">
+        <item>360p</item>
+        <item>480p</item>
+        <item>720p</item>
+        <item>original</item>
+    </array>
+    <array name="descargas_Video_Default">
+        <item>360p</item>
+        <item>original</item>
+    </array>
+
+</resources>
